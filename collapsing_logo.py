@@ -5,7 +5,7 @@ pyautogui.FAILSAFE = True
 duration = 0.7
 switch = 2 
 
-column = 6
+column = 0
 
 startingX = 112
 StartingY = 760
@@ -62,10 +62,8 @@ def phaseOne():
                               phaseOneCopyY1 + (i * coljumpY), phase)
         
         right_or_left('right', phase)
-        print(i)
-        paste_copied_pixels(PhaseOnePasteX1 + (column * coljumpX), PhaseOnePasteY1 + (i * coljumpY+9))
+        paste_copied_pixels(PhaseOnePasteX1 + (column * coljumpX), PhaseOnePasteY1 + (i * (coljumpY+30)))
         right_or_left('left', phase)
-
 
 phaseOne()
 #print(pyautogui.position())
