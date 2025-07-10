@@ -1,0 +1,9 @@
+venv
+.venv
+venv/
+.venv/
+./src/back-end/pam/__pycache__/*
+.\src\back-end\pam\__pycache__/*
+*.pyc
+*.cpython
+*.DS_Store
