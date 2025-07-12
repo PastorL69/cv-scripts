@@ -74,5 +74,16 @@ def phase_two():
         paste_copied_pixels(67 + (column * coljumpX), 594 + (i * (coljumpY+coljumpCorrection)))
         right_or_left('left', phase)
 
+    for i in range(switch):
+        coljumpY = -170
+        select_copy_and_clear_pixels(111 + (column * coljumpX), 
+                               624 + (i * coljumpY), 
+                               7 + (column * coljumpX), 
+                               595 + (i * coljumpY))
+
+        right_or_left('right', phase)
+        paste_copied_pixels(67 + (column * coljumpX), 594 + (i * (coljumpY+coljumpCorrection)))
+        right_or_left('left', phase)
+
 phase_two()
 #print(pyautogui.position())
